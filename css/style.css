@@ -10,12 +10,11 @@ html {
 body {
     margin: 0;
     display: flex;
-    background-color: black;
+    background-color: hsl(204, 43%, 93%);
     height: 100%;
 }
 
 .container {
-    background-color: hsl(204, 43%, 93%);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -47,11 +46,11 @@ body {
     color: #98a6bd;
 }
 
-.box {
+.body {
     display: flex;
 }
 
-.box>.box-2 {
+.body>.box-1 {
     background-color: hsl(179, 62%, 43%);
     width: 50%;
     padding: 25px;
@@ -59,7 +58,7 @@ body {
     color: white;
 }
 
-.box>.box-3 {
+.body>.box-2 {
     background-color: hsl(179deg 59% 50%);
     width: 50%;
     padding: 25px;
@@ -67,7 +66,7 @@ body {
     color: white;
 }
 
-.box>.box-2>.boton {
+.body>.box-1>.boton {
     height: 50px;
     width: 100%;
     color: rgb(255, 255, 255);
@@ -78,7 +77,7 @@ body {
     box-shadow: 0px 0px 19px 3px rgba(141, 141, 141, 0.24);
 }
 
-.box-3>.list {
+.box-2>.list {
     padding-left: 0px;
     list-style-type: none;
 }
@@ -88,15 +87,15 @@ body {
         width: min-content;
         height: auto;
     }
-    .box {
+    .body {
         display: block;
         width: max-content;
     }
-    .box>.box-2 {
+    .body>.box-1 {
         width: auto;
         border-radius: 0 0 0 0;
     }
-    .box>.box-3 {
+    .body>.box-2 {
         width: auto;
         border-radius: 0 0 5px 5px;
     }
