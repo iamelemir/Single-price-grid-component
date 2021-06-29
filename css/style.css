@@ -20,20 +20,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: #98a6bd;
-    width: 600px;
-    height: 400px;
-    display: block;
-    position: absolute;
-    padding: 0;
-    top: 10%;
-    bottom: 25%;
-    right: 25%;
-    left: 25%;
-    border-radius: 5px;
-    -webkit-box-shadow: 0px 0px 19px 3px rgba(141, 141, 141, 0.24);
-    box-shadow: 0px 0px 19px 3px rgba(141, 141, 141, 0.24);
-    color: black; */
 }
 
 .card {
@@ -46,13 +32,7 @@ body {
 }
 
 .header {
-    /* background-color: rgb(255, 255, 255);
-    border-radius: 5px 5px 0 0;
-    padding-top: 10px;
-    width: 100%;
-    height: 45%;
-    display: block; */
-    padding: 25px;
+    padding: 30px;
 }
 
 .header>h1 {
@@ -68,36 +48,28 @@ body {
 }
 
 .box {
-    width: 100%;
-    height: 55%;
     display: flex;
 }
 
 .box>.box-2 {
     background-color: hsl(179, 62%, 43%);
     width: 50%;
-    align-items: flex-start;
-    color: rgb(255, 255, 255);
-    border-radius: 0 0 0 10px;
-    padding-left: 25px;
-    padding-top: 10px;
+    padding: 25px;
+    border-radius: 0 0 0 5px;
+    color: white;
 }
 
 .box>.box-3 {
     background-color: hsl(179deg 59% 50%);
     width: 50%;
-    align-items: flex-start;
-    color: rgb(255, 255, 255);
-    border-radius: 0 0 10px 0;
-    padding-left: 25px;
-    padding-top: 10px;
+    padding: 25px;
+    border-radius: 0 0 5px 0;
+    color: white;
 }
 
 .box>.box-2>.boton {
     height: 50px;
-    width: 90%;
-    margin-top: 20px;
-    padding-left: 25px;
+    width: 100%;
     color: rgb(255, 255, 255);
     background-color: hsl(71, 73%, 54%);
     border-radius: 5px;
@@ -107,51 +79,25 @@ body {
 }
 
 .box-3>.list {
-    list-style-type: none;
     padding-left: 0px;
+    list-style-type: none;
 }
 
-.box-3>.list>.text {
-    padding-top: 1px;
-}
-
-
-/* @media (max-width: 375px) {
-    * {
-        font-size: 87%;
-    }
-    .container {
-        width: 50%;
-        height: 70%;
-        display: block;
-    }
-    .header {
-        display: block;
-        align-items: center;
-        height: 33%;
+@media (max-width: 375px) {
+    .card {
+        width: min-content;
+        height: auto;
     }
     .box {
         display: block;
-        align-items: center;
-        width: 173%;
-        height: 60%;
+        width: max-content;
     }
     .box>.box-2 {
-        width: 50%;
-        height: 50%;
+        width: auto;
         border-radius: 0 0 0 0;
     }
-    .box>.box-2>.boton {
-        margin-top: 3px;
-        height: 30px;
-        width: 90%;
-    }
     .box>.box-3 {
-        width: 50%;
-        height: 50%;
+        width: auto;
         border-radius: 0 0 5px 5px;
     }
-    .box-3>.list>.text {
-        padding: 0;
-    }
-} */
+}
